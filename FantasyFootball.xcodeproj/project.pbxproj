@@ -1,0 +1,658 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7726763D19CE652100AE860B /* NFL_Broncos.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7726763C19CE652100AE860B /* NFL_Broncos.ttf */; };
+		7726764019CE914C00AE860B /* DraftRankingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7726763F19CE914C00AE860B /* DraftRankingViewController.m */; };
+		7726764319CECA6200AE860B /* WeeklyRankingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7726764219CECA6200AE860B /* WeeklyRankingsViewController.m */; };
+		7726764619CEE32400AE860B /* PositionRankingsList.m in Sources */ = {isa = PBXBuildFile; fileRef = 7726764519CEE32400AE860B /* PositionRankingsList.m */; };
+		7726764919CEEAD700AE860B /* PlayerRankData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7726764819CEEAD700AE860B /* PlayerRankData.m */; };
+		772AF5D319D0A010001E5B15 /* ProjectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 772AF5D219D0A010001E5B15 /* ProjectionCell.m */; };
+		772AF5D619D0BA00001E5B15 /* ProjectionsList.m in Sources */ = {isa = PBXBuildFile; fileRef = 772AF5D519D0BA00001E5B15 /* ProjectionsList.m */; };
+		772AF5D919D0BB6D001E5B15 /* PlayerProjectionData.m in Sources */ = {isa = PBXBuildFile; fileRef = 772AF5D819D0BB6D001E5B15 /* PlayerProjectionData.m */; };
+		7733CE6B19CD366800726E24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7733CE6A19CD366800726E24 /* main.m */; };
+		7733CE6E19CD366800726E24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7733CE6D19CD366800726E24 /* AppDelegate.m */; };
+		7733CE7119CD366800726E24 /* TeamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7733CE7019CD366800726E24 /* TeamViewController.m */; };
+		7733CE7419CD366800726E24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7733CE7219CD366800726E24 /* Main.storyboard */; };
+		7733CE7619CD366800726E24 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7733CE7519CD366800726E24 /* Images.xcassets */; };
+		7733CE7919CD366800726E24 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7733CE7719CD366800726E24 /* LaunchScreen.xib */; };
+		7733CE8519CD366800726E24 /* FantasyFootballTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7733CE8419CD366800726E24 /* FantasyFootballTests.m */; };
+		7733CE9319CD378D00726E24 /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7733CE9219CD378D00726E24 /* APIManager.m */; };
+		7733CE9919CD422A00726E24 /* Team.m in Sources */ = {isa = PBXBuildFile; fileRef = 7733CE9819CD422A00726E24 /* Team.m */; };
+		7733CE9D19CD42B500726E24 /* NSObject+Initializers.m in Sources */ = {isa = PBXBuildFile; fileRef = 7733CE9C19CD42B500726E24 /* NSObject+Initializers.m */; };
+		7733CEA219CD454E00726E24 /* TeamCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7733CEA119CD454E00726E24 /* TeamCell.m */; };
+		7733CEA519CD476B00726E24 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7733CEA419CD476B00726E24 /* Utils.m */; };
+		7733CEA819CD5C7E00726E24 /* ScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7733CEA719CD5C7E00726E24 /* ScheduleViewController.m */; };
+		7733CEAB19CD79CF00726E24 /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7733CEAA19CD79CF00726E24 /* PlayerViewController.m */; };
+		7733CEAE19CD79EB00726E24 /* FantasyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7733CEAD19CD79EB00726E24 /* FantasyViewController.m */; };
+		7733CEB119CD895300726E24 /* Schedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 7733CEB019CD895300726E24 /* Schedule.m */; };
+		7733CEB419CD89E000726E24 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 7733CEB319CD89E000726E24 /* Game.m */; };
+		7733CEB719CD8E8400726E24 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 7733CEB619CD8E8400726E24 /* Player.m */; };
+		7733CEBA19CDB11100726E24 /* GameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7733CEB919CDB11100726E24 /* GameCell.m */; };
+		7733CEBD19CDB68700726E24 /* TeamDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7733CEBC19CDB68700726E24 /* TeamDataController.m */; };
+		774F0A7A19CF2A3800921796 /* WeeklyProjectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 774F0A7919CF2A3800921796 /* WeeklyProjectionsViewController.m */; };
+		774F0A7D19CF7A3600921796 /* RankingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 774F0A7C19CF7A3600921796 /* RankingCell.m */; };
+		77A96FE419D10EFA00480C71 /* AlternatingHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A96FE319D10EFA00480C71 /* AlternatingHeaderView.m */; };
+		77A96FE719D144E600480C71 /* PlayerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A96FE619D144E600480C71 /* PlayerCell.m */; };
+		77D3321C19D1E8E90047D81C /* PopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D3321B19D1E8E90047D81C /* PopupView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7733CE7F19CD366800726E24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7733CE5D19CD366800726E24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7733CE6419CD366800726E24;
+			remoteInfo = FantasyFootball;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7726763C19CE652100AE860B /* NFL_Broncos.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NFL_Broncos.ttf; sourceTree = "<group>"; };
+		7726763E19CE914C00AE860B /* DraftRankingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DraftRankingViewController.h; sourceTree = "<group>"; };
+		7726763F19CE914C00AE860B /* DraftRankingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DraftRankingViewController.m; sourceTree = "<group>"; };
+		7726764119CECA6200AE860B /* WeeklyRankingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeeklyRankingsViewController.h; sourceTree = "<group>"; };
+		7726764219CECA6200AE860B /* WeeklyRankingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeeklyRankingsViewController.m; sourceTree = "<group>"; };
+		7726764419CEE32400AE860B /* PositionRankingsList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PositionRankingsList.h; sourceTree = "<group>"; };
+		7726764519CEE32400AE860B /* PositionRankingsList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PositionRankingsList.m; sourceTree = "<group>"; };
+		7726764719CEEAD700AE860B /* PlayerRankData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerRankData.h; sourceTree = "<group>"; };
+		7726764819CEEAD700AE860B /* PlayerRankData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerRankData.m; sourceTree = "<group>"; };
+		772AF5D119D0A010001E5B15 /* ProjectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectionCell.h; sourceTree = "<group>"; };
+		772AF5D219D0A010001E5B15 /* ProjectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectionCell.m; sourceTree = "<group>"; };
+		772AF5D419D0BA00001E5B15 /* ProjectionsList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectionsList.h; sourceTree = "<group>"; };
+		772AF5D519D0BA00001E5B15 /* ProjectionsList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectionsList.m; sourceTree = "<group>"; };
+		772AF5D719D0BB6D001E5B15 /* PlayerProjectionData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerProjectionData.h; sourceTree = "<group>"; };
+		772AF5D819D0BB6D001E5B15 /* PlayerProjectionData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerProjectionData.m; sourceTree = "<group>"; };
+		7733CE6519CD366800726E24 /* FantasyFootball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FantasyFootball.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7733CE6919CD366800726E24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7733CE6A19CD366800726E24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7733CE6C19CD366800726E24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7733CE6D19CD366800726E24 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7733CE6F19CD366800726E24 /* TeamViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TeamViewController.h; sourceTree = "<group>"; };
+		7733CE7019CD366800726E24 /* TeamViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeamViewController.m; sourceTree = "<group>"; };
+		7733CE7319CD366800726E24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7733CE7519CD366800726E24 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7733CE7819CD366800726E24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		7733CE7E19CD366800726E24 /* FantasyFootballTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FantasyFootballTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7733CE8319CD366800726E24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7733CE8419CD366800726E24 /* FantasyFootballTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FantasyFootballTests.m; sourceTree = "<group>"; };
+		7733CE8F19CD36DF00726E24 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		7733CE9119CD378D00726E24 /* APIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIManager.h; sourceTree = "<group>"; };
+		7733CE9219CD378D00726E24 /* APIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIManager.m; sourceTree = "<group>"; };
+		7733CE9419CD387400726E24 /* FantasyFootball-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FantasyFootball-Prefix.pch"; sourceTree = "<group>"; };
+		7733CE9719CD422A00726E24 /* Team.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Team.h; sourceTree = "<group>"; };
+		7733CE9819CD422A00726E24 /* Team.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Team.m; sourceTree = "<group>"; };
+		7733CE9B19CD42B500726E24 /* NSObject+Initializers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Initializers.h"; sourceTree = "<group>"; };
+		7733CE9C19CD42B500726E24 /* NSObject+Initializers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Initializers.m"; sourceTree = "<group>"; };
+		7733CEA019CD454E00726E24 /* TeamCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamCell.h; sourceTree = "<group>"; };
+		7733CEA119CD454E00726E24 /* TeamCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamCell.m; sourceTree = "<group>"; };
+		7733CEA319CD476B00726E24 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		7733CEA419CD476B00726E24 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		7733CEA619CD5C7E00726E24 /* ScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleViewController.h; sourceTree = "<group>"; };
+		7733CEA719CD5C7E00726E24 /* ScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleViewController.m; sourceTree = "<group>"; };
+		7733CEA919CD79CF00726E24 /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
+		7733CEAA19CD79CF00726E24 /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
+		7733CEAC19CD79EB00726E24 /* FantasyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FantasyViewController.h; sourceTree = "<group>"; };
+		7733CEAD19CD79EB00726E24 /* FantasyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FantasyViewController.m; sourceTree = "<group>"; };
+		7733CEAF19CD895300726E24 /* Schedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Schedule.h; sourceTree = "<group>"; };
+		7733CEB019CD895300726E24 /* Schedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Schedule.m; sourceTree = "<group>"; };
+		7733CEB219CD89E000726E24 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		7733CEB319CD89E000726E24 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
+		7733CEB519CD8E8400726E24 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		7733CEB619CD8E8400726E24 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		7733CEB819CDB11100726E24 /* GameCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCell.h; sourceTree = "<group>"; };
+		7733CEB919CDB11100726E24 /* GameCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCell.m; sourceTree = "<group>"; };
+		7733CEBB19CDB68700726E24 /* TeamDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamDataController.h; sourceTree = "<group>"; };
+		7733CEBC19CDB68700726E24 /* TeamDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamDataController.m; sourceTree = "<group>"; };
+		774F0A7819CF2A3800921796 /* WeeklyProjectionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeeklyProjectionsViewController.h; sourceTree = "<group>"; };
+		774F0A7919CF2A3800921796 /* WeeklyProjectionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeeklyProjectionsViewController.m; sourceTree = "<group>"; };
+		774F0A7B19CF7A3600921796 /* RankingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankingCell.h; sourceTree = "<group>"; };
+		774F0A7C19CF7A3600921796 /* RankingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankingCell.m; sourceTree = "<group>"; };
+		77A96FE219D10EFA00480C71 /* AlternatingHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlternatingHeaderView.h; sourceTree = "<group>"; };
+		77A96FE319D10EFA00480C71 /* AlternatingHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlternatingHeaderView.m; sourceTree = "<group>"; };
+		77A96FE519D144E600480C71 /* PlayerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerCell.h; sourceTree = "<group>"; };
+		77A96FE619D144E600480C71 /* PlayerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerCell.m; sourceTree = "<group>"; };
+		77D3321A19D1E8E90047D81C /* PopupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopupView.h; sourceTree = "<group>"; };
+		77D3321B19D1E8E90047D81C /* PopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopupView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7733CE6219CD366800726E24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7733CE7B19CD366800726E24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7726763B19CE64EA00AE860B /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7726763C19CE652100AE860B /* NFL_Broncos.ttf */,
+			);
+			name = fonts;
+			sourceTree = "<group>";
+		};
+		7733CE5C19CD366800726E24 = {
+			isa = PBXGroup;
+			children = (
+				7733CE6719CD366800726E24 /* FantasyFootball */,
+				7733CE8119CD366800726E24 /* FantasyFootballTests */,
+				7733CE6619CD366800726E24 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7733CE6619CD366800726E24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7733CE6519CD366800726E24 /* FantasyFootball.app */,
+				7733CE7E19CD366800726E24 /* FantasyFootballTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7733CE6719CD366800726E24 /* FantasyFootball */ = {
+			isa = PBXGroup;
+			children = (
+				7733CE9A19CD429500726E24 /* categories */,
+				7733CE8E19CD36C700726E24 /* utils */,
+				7733CE9019CD376C00726E24 /* singleton */,
+				7733CE9E19CD452700726E24 /* view */,
+				7733CE9519CD41FE00726E24 /* controller */,
+				7733CE9619CD421200726E24 /* model */,
+				7733CE6C19CD366800726E24 /* AppDelegate.h */,
+				7733CE6D19CD366800726E24 /* AppDelegate.m */,
+				7733CE6819CD366800726E24 /* Supporting Files */,
+			);
+			path = FantasyFootball;
+			sourceTree = "<group>";
+		};
+		7733CE6819CD366800726E24 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7726763B19CE64EA00AE860B /* fonts */,
+				7733CE7519CD366800726E24 /* Images.xcassets */,
+				7733CE7719CD366800726E24 /* LaunchScreen.xib */,
+				7733CE7219CD366800726E24 /* Main.storyboard */,
+				7733CE6919CD366800726E24 /* Info.plist */,
+				7733CE6A19CD366800726E24 /* main.m */,
+				7733CE9419CD387400726E24 /* FantasyFootball-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7733CE8119CD366800726E24 /* FantasyFootballTests */ = {
+			isa = PBXGroup;
+			children = (
+				7733CE8419CD366800726E24 /* FantasyFootballTests.m */,
+				7733CE8219CD366800726E24 /* Supporting Files */,
+			);
+			path = FantasyFootballTests;
+			sourceTree = "<group>";
+		};
+		7733CE8219CD366800726E24 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7733CE8319CD366800726E24 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7733CE8E19CD36C700726E24 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				7733CE8F19CD36DF00726E24 /* Constants.h */,
+				7733CEA319CD476B00726E24 /* Utils.h */,
+				7733CEA419CD476B00726E24 /* Utils.m */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
+		7733CE9019CD376C00726E24 /* singleton */ = {
+			isa = PBXGroup;
+			children = (
+				7733CE9119CD378D00726E24 /* APIManager.h */,
+				7733CE9219CD378D00726E24 /* APIManager.m */,
+				7733CEBB19CDB68700726E24 /* TeamDataController.h */,
+				7733CEBC19CDB68700726E24 /* TeamDataController.m */,
+			);
+			name = singleton;
+			sourceTree = "<group>";
+		};
+		7733CE9519CD41FE00726E24 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				7733CE6F19CD366800726E24 /* TeamViewController.h */,
+				7733CE7019CD366800726E24 /* TeamViewController.m */,
+				7733CEA619CD5C7E00726E24 /* ScheduleViewController.h */,
+				7733CEA719CD5C7E00726E24 /* ScheduleViewController.m */,
+				7733CEA919CD79CF00726E24 /* PlayerViewController.h */,
+				7733CEAA19CD79CF00726E24 /* PlayerViewController.m */,
+				7733CEAC19CD79EB00726E24 /* FantasyViewController.h */,
+				7733CEAD19CD79EB00726E24 /* FantasyViewController.m */,
+				7726763E19CE914C00AE860B /* DraftRankingViewController.h */,
+				7726763F19CE914C00AE860B /* DraftRankingViewController.m */,
+				774F0A7819CF2A3800921796 /* WeeklyProjectionsViewController.h */,
+				774F0A7919CF2A3800921796 /* WeeklyProjectionsViewController.m */,
+				7726764119CECA6200AE860B /* WeeklyRankingsViewController.h */,
+				7726764219CECA6200AE860B /* WeeklyRankingsViewController.m */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		7733CE9619CD421200726E24 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				7733CE9719CD422A00726E24 /* Team.h */,
+				7733CE9819CD422A00726E24 /* Team.m */,
+				7733CEAF19CD895300726E24 /* Schedule.h */,
+				7733CEB019CD895300726E24 /* Schedule.m */,
+				7733CEB219CD89E000726E24 /* Game.h */,
+				7733CEB319CD89E000726E24 /* Game.m */,
+				7733CEB519CD8E8400726E24 /* Player.h */,
+				7733CEB619CD8E8400726E24 /* Player.m */,
+				7726764419CEE32400AE860B /* PositionRankingsList.h */,
+				7726764519CEE32400AE860B /* PositionRankingsList.m */,
+				772AF5D419D0BA00001E5B15 /* ProjectionsList.h */,
+				772AF5D519D0BA00001E5B15 /* ProjectionsList.m */,
+				772AF5D719D0BB6D001E5B15 /* PlayerProjectionData.h */,
+				772AF5D819D0BB6D001E5B15 /* PlayerProjectionData.m */,
+				7726764719CEEAD700AE860B /* PlayerRankData.h */,
+				7726764819CEEAD700AE860B /* PlayerRankData.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		7733CE9A19CD429500726E24 /* categories */ = {
+			isa = PBXGroup;
+			children = (
+				7733CE9B19CD42B500726E24 /* NSObject+Initializers.h */,
+				7733CE9C19CD42B500726E24 /* NSObject+Initializers.m */,
+			);
+			name = categories;
+			sourceTree = "<group>";
+		};
+		7733CE9E19CD452700726E24 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				7733CE9F19CD452F00726E24 /* table cells */,
+				77A96FE219D10EFA00480C71 /* AlternatingHeaderView.h */,
+				77A96FE319D10EFA00480C71 /* AlternatingHeaderView.m */,
+				77D3321A19D1E8E90047D81C /* PopupView.h */,
+				77D3321B19D1E8E90047D81C /* PopupView.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		7733CE9F19CD452F00726E24 /* table cells */ = {
+			isa = PBXGroup;
+			children = (
+				7733CEA019CD454E00726E24 /* TeamCell.h */,
+				7733CEA119CD454E00726E24 /* TeamCell.m */,
+				7733CEB819CDB11100726E24 /* GameCell.h */,
+				7733CEB919CDB11100726E24 /* GameCell.m */,
+				77A96FE519D144E600480C71 /* PlayerCell.h */,
+				77A96FE619D144E600480C71 /* PlayerCell.m */,
+				774F0A7B19CF7A3600921796 /* RankingCell.h */,
+				774F0A7C19CF7A3600921796 /* RankingCell.m */,
+				772AF5D119D0A010001E5B15 /* ProjectionCell.h */,
+				772AF5D219D0A010001E5B15 /* ProjectionCell.m */,
+			);
+			name = "table cells";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7733CE6419CD366800726E24 /* FantasyFootball */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7733CE8819CD366800726E24 /* Build configuration list for PBXNativeTarget "FantasyFootball" */;
+			buildPhases = (
+				7733CE6119CD366800726E24 /* Sources */,
+				7733CE6219CD366800726E24 /* Frameworks */,
+				7733CE6319CD366800726E24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FantasyFootball;
+			productName = FantasyFootball;
+			productReference = 7733CE6519CD366800726E24 /* FantasyFootball.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7733CE7D19CD366800726E24 /* FantasyFootballTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7733CE8B19CD366800726E24 /* Build configuration list for PBXNativeTarget "FantasyFootballTests" */;
+			buildPhases = (
+				7733CE7A19CD366800726E24 /* Sources */,
+				7733CE7B19CD366800726E24 /* Frameworks */,
+				7733CE7C19CD366800726E24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7733CE8019CD366800726E24 /* PBXTargetDependency */,
+			);
+			name = FantasyFootballTests;
+			productName = FantasyFootballTests;
+			productReference = 7733CE7E19CD366800726E24 /* FantasyFootballTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7733CE5D19CD366800726E24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Jennifer Duffey";
+				TargetAttributes = {
+					7733CE6419CD366800726E24 = {
+						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = E3XMH5WD5Q;
+					};
+					7733CE7D19CD366800726E24 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 7733CE6419CD366800726E24;
+					};
+				};
+			};
+			buildConfigurationList = 7733CE6019CD366800726E24 /* Build configuration list for PBXProject "FantasyFootball" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7733CE5C19CD366800726E24;
+			productRefGroup = 7733CE6619CD366800726E24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7733CE6419CD366800726E24 /* FantasyFootball */,
+				7733CE7D19CD366800726E24 /* FantasyFootballTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7733CE6319CD366800726E24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7733CE7419CD366800726E24 /* Main.storyboard in Resources */,
+				7726763D19CE652100AE860B /* NFL_Broncos.ttf in Resources */,
+				7733CE7919CD366800726E24 /* LaunchScreen.xib in Resources */,
+				7733CE7619CD366800726E24 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7733CE7C19CD366800726E24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7733CE6119CD366800726E24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7733CEB419CD89E000726E24 /* Game.m in Sources */,
+				77A96FE719D144E600480C71 /* PlayerCell.m in Sources */,
+				7733CE9919CD422A00726E24 /* Team.m in Sources */,
+				7726764319CECA6200AE860B /* WeeklyRankingsViewController.m in Sources */,
+				7733CEA219CD454E00726E24 /* TeamCell.m in Sources */,
+				7733CE9319CD378D00726E24 /* APIManager.m in Sources */,
+				7733CEBD19CDB68700726E24 /* TeamDataController.m in Sources */,
+				774F0A7D19CF7A3600921796 /* RankingCell.m in Sources */,
+				7733CEA519CD476B00726E24 /* Utils.m in Sources */,
+				77D3321C19D1E8E90047D81C /* PopupView.m in Sources */,
+				7733CEAE19CD79EB00726E24 /* FantasyViewController.m in Sources */,
+				774F0A7A19CF2A3800921796 /* WeeklyProjectionsViewController.m in Sources */,
+				7733CEBA19CDB11100726E24 /* GameCell.m in Sources */,
+				7733CE9D19CD42B500726E24 /* NSObject+Initializers.m in Sources */,
+				7726764619CEE32400AE860B /* PositionRankingsList.m in Sources */,
+				7733CEB119CD895300726E24 /* Schedule.m in Sources */,
+				7733CE7119CD366800726E24 /* TeamViewController.m in Sources */,
+				7733CE6E19CD366800726E24 /* AppDelegate.m in Sources */,
+				772AF5D619D0BA00001E5B15 /* ProjectionsList.m in Sources */,
+				7733CEA819CD5C7E00726E24 /* ScheduleViewController.m in Sources */,
+				7733CE6B19CD366800726E24 /* main.m in Sources */,
+				7733CEB719CD8E8400726E24 /* Player.m in Sources */,
+				7726764019CE914C00AE860B /* DraftRankingViewController.m in Sources */,
+				7726764919CEEAD700AE860B /* PlayerRankData.m in Sources */,
+				772AF5D919D0BB6D001E5B15 /* PlayerProjectionData.m in Sources */,
+				772AF5D319D0A010001E5B15 /* ProjectionCell.m in Sources */,
+				7733CEAB19CD79CF00726E24 /* PlayerViewController.m in Sources */,
+				77A96FE419D10EFA00480C71 /* AlternatingHeaderView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7733CE7A19CD366800726E24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7733CE8519CD366800726E24 /* FantasyFootballTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7733CE8019CD366800726E24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7733CE6419CD366800726E24 /* FantasyFootball */;
+			targetProxy = 7733CE7F19CD366800726E24 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7733CE7219CD366800726E24 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7733CE7319CD366800726E24 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7733CE7719CD366800726E24 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7733CE7819CD366800726E24 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7733CE8619CD366800726E24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7733CE8719CD366800726E24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7733CE8919CD366800726E24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jennifer Duffey (ZEMJXP487Z)";
+				GCC_PREFIX_HEADER = "FantasyFootball/FantasyFootball-Prefix.pch";
+				INFOPLIST_FILE = FantasyFootball/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "CC6A3F23-B96B-4D2C-BCA4-ACEAB76D1850";
+			};
+			name = Debug;
+		};
+		7733CE8A19CD366800726E24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jennifer Duffey (ZEMJXP487Z)";
+				GCC_PREFIX_HEADER = "FantasyFootball/FantasyFootball-Prefix.pch";
+				INFOPLIST_FILE = FantasyFootball/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "CC6A3F23-B96B-4D2C-BCA4-ACEAB76D1850";
+			};
+			name = Release;
+		};
+		7733CE8C19CD366800726E24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FantasyFootballTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FantasyFootball.app/FantasyFootball";
+			};
+			name = Debug;
+		};
+		7733CE8D19CD366800726E24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FantasyFootballTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FantasyFootball.app/FantasyFootball";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7733CE6019CD366800726E24 /* Build configuration list for PBXProject "FantasyFootball" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7733CE8619CD366800726E24 /* Debug */,
+				7733CE8719CD366800726E24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7733CE8819CD366800726E24 /* Build configuration list for PBXNativeTarget "FantasyFootball" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7733CE8919CD366800726E24 /* Debug */,
+				7733CE8A19CD366800726E24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7733CE8B19CD366800726E24 /* Build configuration list for PBXNativeTarget "FantasyFootballTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7733CE8C19CD366800726E24 /* Debug */,
+				7733CE8D19CD366800726E24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7733CE5D19CD366800726E24 /* Project object */;
+}

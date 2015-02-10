@@ -1,0 +1,21 @@
+//
+//  FantasyFootbal-Prefix.pch
+//  FantasyFootball
+//
+//  Created by Jennifer Duffey on 9/19/14.
+//  Copyright (c) 2014 Jennifer Duffey. All rights reserved.
+//
+
+#ifndef FantasyFootball_FantasyFootball_Prefix_pch
+#define FantasyFootball_FantasyFootball_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "Constants.h"
+#import "Utils.h"
+#import "APIManager.h"
+#import "NSObject+Initializers.h"
+#import "TeamDataController.h"
+
+#endif
